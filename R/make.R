@@ -3,7 +3,7 @@ from <- "../../metrumresearchgroup/devmodels/"
 to <- file.path("inst", "models")
 cp <- function(from_dir,from_file,to_dir,to_file=from_file) {
   from <- file.path(from,from_dir,from_file)
-  to_dir <- file.path(to,to_dir)
+  to_dir <- file.path(to)
   if(!dir.exists(to_dir)) dir.create(to_dir)
   to_file <- file.path(to_dir,to_file)
   print(to_file)
