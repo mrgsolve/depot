@@ -1,11 +1,11 @@
 [PROB]
-https://www.ncbi.nlm.nih.gov/pubmed/20881223
-
 1: Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M, Berghout A, Balser S.
 Population modeling of filgrastim PK-PD in healthy adults following intravenous
 and subcutaneous administrations. J Clin Pharmacol. 
 2010 Sep;50(9 Suppl):101S-112S. doi: 10.1177/0091270010376966. 
 PubMed PMID: 20881223.
+
+https://www.ncbi.nlm.nih.gov/pubmed/20881223
 
 
 PKPD NEUPOGEN BASELINE(BAS) at 0.0246 ng/ml

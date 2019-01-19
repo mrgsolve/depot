@@ -1,6 +1,9 @@
-$PROB
-# Wicha et al. 2015
-- Moxifloxacin PK in diabetic foot infection
+[ PROB ]
+1: Wicha SG, Haak T, Zink K, Kees F, Kloft C, Kees MG. Population
+pharmacokinetics and target attainment analysis of moxifloxacin in patients with 
+diabetic foot infections. J Clin Pharmacol. 2015 Jun;55(6):639-46.
+doi:10.1002/jcph.464. Epub 2015 Feb 13. PubMed PMID: 25600294.
+
 - https://www.ncbi.nlm.nih.gov/pubmed/25600294
 
 $PARAM WGT = 70, IBW = 70, fu = 0.6

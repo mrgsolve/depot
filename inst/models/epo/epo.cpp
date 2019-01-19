@@ -1,4 +1,9 @@
-$PROB
+[ PROB ]
+1: Yan X, Lowe PJ, Fink M, Berghout A, Balser S, Krzyzanski W. Population
+pharmacokinetic and pharmacodynamic model-based comparability assessment of a
+recombinant human Epoetin Alfa and the Biosimilar HX575. J Clin Pharmacol. 2012
+Nov;52(11):1624-44. doi: 10.1177/0091270011421911. Epub 2011 Dec 12. 
+PubMed PMID: 22162538; PubMed Central PMCID: PMC3483448.
 
 https://www.ncbi.nlm.nih.gov/pubmed/22162538
 

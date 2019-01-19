@@ -1,5 +1,7 @@
 [PROB]
-Meropenem PopPK
+1: Li C, Kuti JL, Nightingale CH, Nicolau DP. Population pharmacokinetic analysis
+and dosing regimen optimization of meropenem in adult patients. J Clin Pharmacol.
+2006 Oct;46(10):1171-8. PubMed PMID: 16988206.
 
 https://www.ncbi.nlm.nih.gov/pubmed/16988206
 

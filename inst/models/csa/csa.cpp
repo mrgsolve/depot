@@ -1,13 +1,14 @@
 [PROB]
 # Yoshikado et al. (2016)
 
-- Title: __Quantitative Analyses of Hepatic OATP-Mediated
-Interactions Between Statins and Inhibitors Using PBPK
-Modeling With a Parameter Optimiaztion Method__
-- Reference: CP\&T vol. 100 no. 5 pp. 513-23 11/2016
-- Parameters: 40
-- Compartments: 31
+1: Yoshikado T, Yoshida K, Kotani N, Nakada T, Asaumi R, Toshimoto K, Maeda K,
+Kusuhara H, Sugiyama Y. Quantitative Analyses of Hepatic OATP-Mediated
+Interactions Between Statins and Inhibitors Using PBPK Modeling With a Parameter 
+Optimization Method. Clin Pharmacol Ther. 2016 Nov;100(5):513-523. 
+doi: 10.1002/cpt.391. Epub 2016 Jul 28. PubMed PMID: 27170342.
 
+https://www.ncbi.nlm.nih.gov/pubmed/27170342
+  
 [ CMT ] @annotated
 gut : Gut compartment
 cent : CsA central compartment

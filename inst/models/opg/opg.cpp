@@ -1,7 +1,8 @@
 [PROB]
-# Zierhut et al. (2008)
-  - Population PK-PD model for Fc-osteoprotegerin in healthy postmenopausal women
-  - J Pharmacokinet Pharmacodyn 35(4): 379-99 
+1: Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ, Holloway D, Leese
+PT, Peterson MC. Population PK-PD model for Fc-osteoprotegerin in healthy
+postmenopausal women. J Pharmacokinet Pharmacodyn. 2008 Aug;35(4):379-99. 
+doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17. PubMed PMID: 18633695.
 
 
 [PARAM]  @annotated

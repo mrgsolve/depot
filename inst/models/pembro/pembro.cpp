@@ -1,3 +1,10 @@
+[ PROB ] 
+1: Elassaiss-Schaap J, Rossenu S, Lindauer A, Kang SP, de Greef R, Sachs JR, de
+Alwis DP. Using Model-Based "Learn and Confirm" to Reveal the
+Pharmacokinetics-Pharmacodynamics Relationship of Pembrolizumab in the
+KEYNOTE-001 Trial. CPT Pharmacometrics Syst Pharmacol. 2017 Jan;6(1):21-28. 
+doi: 10.1002/psp4.12132. Epub 2016 Nov 8. 
+PubMed PMID: 27863143; PubMed Central PMCID: PMC5270295.
 
 [PARAM] @annotated
 TVCL : 0.168  : Clearance (L/d)
@@ -29,7 +36,6 @@ EVMAX : 0 : IIV on VMAX
 EPS_PK : 0.0876 : RUV PK
 EPS_PD : 0.209  : RUV PD
 
-  
 [ODE]
 double CP = CENT/VC;
 double CLNL = VMAX/(KM+CP);
@@ -42,6 +48,4 @@ dxdt_PERIPH = Q*(CP - PERIPH/VP);
 CP = CENT/VC;
 //EMAX-(EMAX-BASE)*(CP**GAM/(EC50**GAM+CP**GAM))
 capture PD = IMAX-(IMAX-BASE)*(CP/(IC50+CP));
-
-
 [CAPTURE] CP CL CLNL

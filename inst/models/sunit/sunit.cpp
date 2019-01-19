@@ -1,3 +1,10 @@
+[ PROB ]
+1: Houk BE, Bello CL, Kang D, Amantea M. A population pharmacokinetic
+meta-analysis of sunitinib malate (SU11248) and its primary metabolite (SU12662) 
+in healthy volunteers and oncology patients. Clin Cancer Res. 2009 Apr
+1;15(7):2497-506. doi: 10.1158/1078-0432.CCR-08-1893. Epub 2009 Mar 3. 
+PubMed PMID: 19258444.
+
 $PARAM
 TVCL = 51.8
 TVVC = 2030
