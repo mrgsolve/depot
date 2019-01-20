@@ -4,14 +4,10 @@ to <- file.path("inst", "models")
 cp <- function(from_dir,from_file,to_dir,to_file=from_file) {
   from <- file.path(from,from_dir,from_file)
   to_dir <- file.path(to)
-  if(!dir.exists(to_dir)) dir.create(to_dir)
   to_file <- file.path(to_dir,to_file)
-  print(to_file)
-  print(from)
   file.copy(from,to_file,overwrite=TRUE)
 
 }
-
 
 cp("cipro", "cipro.cpp", "cipro")
 cp("gcsf", "gcsf.cpp", "gcsf")
@@ -29,3 +25,4 @@ cp("ddi", "yoshikado.cpp", "pitavddi", "pitavddi.cpp")
 cp("rifampicin", "rifampicin.cpp", "rifampicin")
 cp("rifampicin", "rifampicin_midazolam.cpp", "rifampicin_midazolam")
 cp("rifampicin", "midazolam.cpp", "midazolam")
+
