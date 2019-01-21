@@ -129,7 +129,7 @@ double Vplas_art = Vpl*Var/(Vve + Var) 	; // arterial plasma
 
 // {Total tissue blood flows - L/hr}
 
-double QC = CO/1000*60*60     ; // cardiac output (L/hr)
+double QC  = CO/1000*60*60    ; // cardiac output (L/hr)
 double Qad = QC*FQad          ; // adipose 
 double Qbo = QC*FQbo          ; // bone 
 double Qbr = QC*FQbr          ; // brain 
