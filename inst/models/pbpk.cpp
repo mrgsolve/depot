@@ -10,22 +10,22 @@ Syst Pharmacol. 2013 Aug 14;2:e63. doi: 10.1038/psp.2013.41. PubMed PMID:
 [ SET ] end = 24, delta = 0.25
 
 [ CMT ] 
-Aad // adipose
-Abo // bone
-Abr // brain
-Agu // gut
-Ahe // heart
-Aki // kidney
-Ali // liver
-Alu // lung
-Amu // muscle
-Ask // skin
-Asp // spleen
-Ate // testes
-Ave // venous blood
-Aar // arterial blood
-Are // rest of body
-D   // dose
+Aad   //; adipose
+Abo   //; bone
+Abr   //; brain
+Agu   //; gut
+Ahe   //; heart
+Aki   //; kidney
+Ali   //; liver
+Alu   //; lung
+Amu   //; muscle
+Ask   //; skin
+Asp   //; spleen
+Ate   //; testes
+Ave   //; venous blood
+Aar   //; arterial blood
+Are   //; rest of body
+D     //; dose
 
 [ PARAM ] 
 
@@ -87,9 +87,9 @@ Kpre = 1  //; rest of body
 
 // {In vitro binding data}
 
-fup   = 1	//; fraction unbound in plasma
-BP    = 1	//; blood to plasma ratio
-fumic = 1	//; fraction unbound in microsomes
+fup   = 1	 //; fraction unbound in plasma
+BP    = 1	 //; blood to plasma ratio
+fumic = 1	 //; fraction unbound in microsomes
 
 // {Clearances}
 
@@ -105,30 +105,30 @@ CO = 108.33		//; cardiac output (ml/s)
 [ MAIN  ]
 
 // {Total tissue volumes - L}
-double Vad = BW*FVad		; // adipose 
-double Vbo = BW*FVbo    ; // bone 
-double Vbr = BW*FVbr		; // brain 
-double Vgu = BW*FVgu    ; // gut 
-double Vhe = BW*FVhe    ; // heart 
-double Vki = BW*FVki    ; // kidney
-double Vli = BW*FVli		; // liver 
-double Vlu = BW*FVlu		; // lung
-double Vmu = BW*FVmu    ; // muscle
-double Vsk = BW*FVsk    ; // skin 
-double Vsp = BW*FVsp    ; // spleen
-double Vte = BW*FVte    ; // testes
-double Vve = BW*FVve		; // venous blood
-double Var = BW*FVar		; // arterial blood
-double Vpl = BW*FVpl    ; // plasma 
-double Vrb = BW*FVrb    ; // erythrocytes 
-double Vre = BW*FVre    ; // rest of body 
+double Vad = BW*FVad; // adipose 
+double Vbo = BW*FVbo; // bone 
+double Vbr = BW*FVbr; // brain 
+double Vgu = BW*FVgu; // gut 
+double Vhe = BW*FVhe; // heart 
+double Vki = BW*FVki; // kidney
+double Vli = BW*FVli; // liver 
+double Vlu = BW*FVlu; // lung
+double Vmu = BW*FVmu; // muscle
+double Vsk = BW*FVsk; // skin 
+double Vsp = BW*FVsp; // spleen
+double Vte = BW*FVte; // testes
+double Vve = BW*FVve; // venous blood
+double Var = BW*FVar; // arterial blood
+double Vpl = BW*FVpl; // plasma 
+double Vrb = BW*FVrb; // erythrocytes 
+double Vre = BW*FVre; // rest of body 
 
 double Vplas_ven = Vpl*Vve/(Vve + Var) 	; // venous plasma
 double Vplas_art = Vpl*Var/(Vve + Var) 	; // arterial plasma
 
 // {Total tissue blood flows - L/hr}
 
-double QC = CO/1000*60*60     ; //cardiac output (L/hr)
+double QC = CO/1000*60*60     ; // cardiac output (L/hr)
 double Qad = QC*FQad          ; // adipose 
 double Qbo = QC*FQbo          ; // bone 
 double Qbr = QC*FQbr          ; // brain 
@@ -168,13 +168,13 @@ double Cplasmavenous = Cvenous/BP	; // venous plasma
 
 // {Calculation of free concentrations - mg/L}
 
-double Cliverfree = Cliver*fup		; //liver 
-double Ckidneyfree = Ckidney*fup	; // kidney 
+double Cliverfree  = Cliver*fup;  // liver 
+double Ckidneyfree = Ckidney*fup; // kidney 
 
 // {Clearance calculations}
 
 double MPPGL = 45; // mg microsomal protein per g liver
-double CLmet = (HLM_CLint/fumic)*MPPGL*Vli*60/1000	; // CLint scaled (L/hr)
+double CLmet = (HLM_CLint/fumic)*MPPGL*Vli*60/1000; // CLint scaled (L/hr)
 
 double Venous = 
   Qad*(Cadipose/Kpad*BP) + Qbo*(Cbone/Kpbo*BP)   + 
