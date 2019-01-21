@@ -88,9 +88,9 @@ Kpre = 1  //; rest of body
 
 // {In vitro binding data}
 
-fup   = 1    //; fraction unbound in plasma
-BP    = 1    //; blood to plasma ratio
-fumic = 1    //; fraction unbound in microsomes
+fup   = 1  //; fraction unbound in plasma
+BP    = 1  //; blood to plasma ratio
+fumic = 1  //; fraction unbound in microsomes
 
 // {Clearances}
 
@@ -106,63 +106,63 @@ CO = 108.33   //; cardiac output (ml/s)
 [ MAIN  ]
 
 // {Total tissue volumes - L}
-double Vad = BW*FVad; // adipose 
-double Vbo = BW*FVbo; // bone 
-double Vbr = BW*FVbr; // brain 
-double Vgu = BW*FVgu; // gut 
-double Vhe = BW*FVhe; // heart 
-double Vki = BW*FVki; // kidney
-double Vli = BW*FVli; // liver 
-double Vlu = BW*FVlu; // lung
-double Vmu = BW*FVmu; // muscle
-double Vsk = BW*FVsk; // skin 
-double Vsp = BW*FVsp; // spleen
-double Vte = BW*FVte; // testes
-double Vve = BW*FVve; // venous blood
-double Var = BW*FVar; // arterial blood
-double Vpl = BW*FVpl; // plasma 
-double Vrb = BW*FVrb; // erythrocytes 
-double Vre = BW*FVre; // rest of body 
+double Vad = BW*FVad;  // adipose 
+double Vbo = BW*FVbo;  // bone 
+double Vbr = BW*FVbr;  // brain 
+double Vgu = BW*FVgu;  // gut 
+double Vhe = BW*FVhe;  // heart 
+double Vki = BW*FVki;  // kidney
+double Vli = BW*FVli;  // liver 
+double Vlu = BW*FVlu;  // lung
+double Vmu = BW*FVmu;  // muscle
+double Vsk = BW*FVsk;  // skin 
+double Vsp = BW*FVsp;  // spleen
+double Vte = BW*FVte;  // testes
+double Vve = BW*FVve;  // venous blood
+double Var = BW*FVar;  // arterial blood
+double Vpl = BW*FVpl;  // plasma 
+double Vrb = BW*FVrb;  // erythrocytes 
+double Vre = BW*FVre;  // rest of body
 
-double Vplas_ven = Vpl*Vve/(Vve + Var) 	; // venous plasma
-double Vplas_art = Vpl*Var/(Vve + Var) 	; // arterial plasma
+double Vplas_ven = Vpl*Vve/(Vve + Var) 	;  // venous plasma
+double Vplas_art = Vpl*Var/(Vve + Var) 	;  // arterial plasma
 
 // {Total tissue blood flows - L/hr}
 
-double QC  = CO/1000*60*60    ; // cardiac output (L/hr)
-double Qad = QC*FQad          ; // adipose 
-double Qbo = QC*FQbo          ; // bone 
-double Qbr = QC*FQbr          ; // brain 
-double Qgu = QC*FQgu          ; // gut
-double Qhe = QC*FQhe          ; // heart 
-double Qki = QC*FQki          ; // kidney 
-double Qh  = QC*FQh           ; // hepatic (venous side)
-double Qha = Qh - Qgu - Qsp   ; // hepatic artery 
-double Qlu = QC*FQlu          ; // lung 
-double Qmu = QC*FQmu          ; // muscle 
-double Qsk = QC*FQsk          ; // skin 
-double Qsp = QC*FQsp          ; // spleen 
-double Qte = QC*FQte          ; // testes 
-double Qre = QC*FQre          ; // rest of body
+double QC  = CO/1000*60*60 ;  // cardiac output (L/hr)
+double Qad = QC*FQad       ;  // adipose 
+double Qbo = QC*FQbo       ;  // bone 
+double Qbr = QC*FQbr       ;  // brain 
+double Qgu = QC*FQgu       ;  // gut
+double Qhe = QC*FQhe       ;  // heart 
+double Qki = QC*FQki       ;  // kidney 
+double Qh  = QC*FQh        ;  // hepatic (venous side)
+double Qha = Qh - Qgu - Qsp;  // hepatic artery 
+double Qlu = QC*FQlu       ;  // lung 
+double Qmu = QC*FQmu       ;  // muscle 
+double Qsk = QC*FQsk       ;  // skin 
+double Qsp = QC*FQsp       ;  // spleen 
+double Qte = QC*FQte       ;  // testes 
+double Qre = QC*FQre       ;  // rest of body
 
 
 [ ODE ]
 
-double Cadipose  = Aad/Vad    ; // adipose 
-double Cbone     = Abo/Vbo    ; // bone 
-double Cbrain    = Abr/Vbr    ; // brain
-double Cgut      = Agu/Vgu    ; // gut
-double Cheart    = Ahe/Vhe    ; // heart 
-double Ckidney   = Aki/Vki    ; // kidney 
-double Cliver    = Ali/Vli    ; // liver 
-double Clung     = Alu/Vlu    ; // lung 
-double Cmuscle   = Amu/Vmu    ; // muscle
-double Cskin     = Ask/Vsk    ; // skin 
-double Cspleen   = Asp/Vsp    ; // spleen 
-double Ctestes   = Ate/Vte    ; // testes 
-double Cvenous   = Ave/Vve    ; // venous blood
-double Carterial = Aar/Var    ; // arterial blood
-double Crest     = Are/Vre    ; // rest of body 
+double Cadipose  = Aad/Vad;  // adipose 
+double Cbone     = Abo/Vbo;  // bone 
+double Cbrain    = Abr/Vbr;  // brain
+double Cgut      = Agu/Vgu;  // gut
+double Cheart    = Ahe/Vhe;  // heart 
+double Ckidney   = Aki/Vki;  // kidney 
+double Cliver    = Ali/Vli;  // liver 
+double Clung     = Alu/Vlu;  // lung 
+double Cmuscle   = Amu/Vmu;  // muscle
+double Cskin     = Ask/Vsk;  // skin 
+double Cspleen   = Asp/Vsp;  // spleen 
+double Ctestes   = Ate/Vte;  // testes 
+double Cvenous   = Ave/Vve;  // venous blood
+double Carterial = Aar/Var;  // arterial blood
+double Crest     = Are/Vre;  // rest of body
 
 // {Calculation of free concentrations - mg/L}
 
