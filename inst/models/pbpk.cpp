@@ -10,6 +10,7 @@ Syst Pharmacol. 2013 Aug 14;2:e63. doi: 10.1038/psp.2013.41. PubMed PMID:
 [ SET ] end = 24, delta = 0.25
 
 [ CMT ] 
+D     //; dose
 Aad   //; adipose
 Abo   //; bone
 Abr   //; brain
@@ -25,7 +26,7 @@ Ate   //; testes
 Ave   //; venous blood
 Aar   //; arterial blood
 Are   //; rest of body
-D     //; dose
+
 
 [ PARAM ] 
 
@@ -163,9 +164,6 @@ double Cvenous   = Ave/Vve	  ; // venous blood
 double Carterial = Aar/Var		; // arterial blood
 double Crest     = Are/Vre 		; // rest of body 
 
-// --------------------------------------------------------
-double Cplasmavenous = Cvenous/BP	; // venous plasma 
-
 // {Calculation of free concentrations - mg/L}
 
 double Cliverfree  = Cliver*fup;  // liver 
@@ -208,3 +206,8 @@ dxdt_Are = Qre*(Carterial - Crest/Kpre*BP);       // rest of body
 dxdt_D   = - Absorption;                          // oral dosing
 
 [ CAPTURE ] Cvenous = Ave/Vve
+
+[ TABLE ] 
+capture Cp = Cvenous/BP	; // venous plasma 
+
+  
