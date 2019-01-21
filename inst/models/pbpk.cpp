@@ -148,21 +148,21 @@ double Qre = QC*FQre          ; // rest of body
 
 [ ODE ]
 
-double Cadipose  = Aad/Vad		; // adipose 
-double Cbone     = Abo/Vbo		; // bone 
-double Cbrain    = Abr/Vbr		; // brain
-double Cgut      = Agu/Vgu		; // gut
-double Cheart    = Ahe/Vhe		; // heart 
-double Ckidney   = Aki/Vki		; // kidney 
+double Cadipose  = Aad/Vad    ; // adipose 
+double Cbone     = Abo/Vbo    ; // bone 
+double Cbrain    = Abr/Vbr    ; // brain
+double Cgut      = Agu/Vgu    ; // gut
+double Cheart    = Ahe/Vhe    ; // heart 
+double Ckidney   = Aki/Vki    ; // kidney 
 double Cliver    = Ali/Vli    ; // liver 
-double Clung     = Alu/Vlu		; // lung 
-double Cmuscle   = Amu/Vmu		; // muscle
-double Cskin     = Ask/Vsk		; // skin 
-double Cspleen   = Asp/Vsp		; // spleen 
-double Ctestes   = Ate/Vte		; // testes 
+double Clung     = Alu/Vlu    ; // lung 
+double Cmuscle   = Amu/Vmu    ; // muscle
+double Cskin     = Ask/Vsk    ; // skin 
+double Cspleen   = Asp/Vsp    ; // spleen 
+double Ctestes   = Ate/Vte    ; // testes 
 double Cvenous   = Ave/Vve    ; // venous blood
-double Carterial = Aar/Var		; // arterial blood
-double Crest     = Are/Vre 		; // rest of body 
+double Carterial = Aar/Var    ; // arterial blood
+double Crest     = Are/Vre    ; // rest of body 
 
 // {Calculation of free concentrations - mg/L}
 
