@@ -34,20 +34,20 @@ BW = 70	//; BW (kg)
 
 // {Fractional tissue volumes}
 
-FVad = 0.213		 //; adipose
-FVbo = 0.085629	 //; bone
-FVbr = 0.02		   //; brain
-FVgu = 0.0171		 //; gut
-FVhe = 0.0047		 //; heart
-FVki = 0.0044		 //; kidney
-FVli = 0.021		 //; liver 
-FVlu = 0.0076		 //; lung
+FVad = 0.213     //; adipose
+FVbo = 0.085629  //; bone
+FVbr = 0.02      //; brain
+FVgu = 0.0171    //; gut
+FVhe = 0.0047    //; heart
+FVki = 0.0044    //; kidney
+FVli = 0.021     //; liver 
+FVlu = 0.0076    //; lung
 FVmu = 0.4       //; muscle
 FVsk = 0.0371    //; skin
 FVsp = 0.0026    //; spleen 
 FVte = 0.01      //; testes 
-FVve = 0.0514		 //; venous
-FVar = 0.0257		 //; arterial 
+FVve = 0.0514    //; venous
+FVar = 0.0257    //; arterial 
 FVpl = 0.0424    //; plasma 
 FVrb = 0.0347    //; erythrocytes
 FVre = 0.099771  //; rest of body 
@@ -61,7 +61,7 @@ FQgu = 0.146462  //; gut
 FQhe = 0.04      //; heart 
 FQki = 0.19      //; kidney 
 FQh  = 0.215385  //; hepatic (venous side) 
-FQlu = 1	       //; lung
+FQlu = 1         //; lung
 FQmu = 0.17      //; muscle 
 FQsk = 0.05      //; skin 
 FQsp = 0.017231  //; spleen
@@ -78,8 +78,8 @@ Kpbr = 1  //; brain
 Kpgu = 1  //; gut
 Kphe = 1  //; heart
 Kpki = 1  //; kidney
-Kpli = 1	//; liver
-Kplu = 1	//; lung
+Kpli = 1  //; liver
+Kplu = 1  //; lung
 Kpmu = 1  //; muscle
 Kpsk = 1  //; skin
 Kpsp = 1  //; spleen
@@ -88,20 +88,20 @@ Kpre = 1  //; rest of body
 
 // {In vitro binding data}
 
-fup   = 1	 //; fraction unbound in plasma
-BP    = 1	 //; blood to plasma ratio
-fumic = 1	 //; fraction unbound in microsomes
+fup   = 1    //; fraction unbound in plasma
+BP    = 1    //; blood to plasma ratio
+fumic = 1    //; fraction unbound in microsomes
 
 // {Clearances}
 
-HLM_CLint = 10 //; HLM CLint apparent (ul/min/mg) 
-CLrenal   =  0 //; CLint renal (L/hr)
+HLM_CLint = 10   //; HLM CLint apparent (ul/min/mg) 
+CLrenal   =  0   //; CLint renal (L/hr)
 
 // {Absorption}
 
-Ka = 1		    //; Ka (hr-1)
-F  = 1		    //; fraction absorbed
-CO = 108.33		//; cardiac output (ml/s)
+Ka = 1        //; Ka (hr-1)
+F  = 1        //; fraction absorbed
+CO = 108.33   //; cardiac output (ml/s)
 
 [ MAIN  ]
 
@@ -137,13 +137,13 @@ double Qgu = QC*FQgu          ; // gut
 double Qhe = QC*FQhe          ; // heart 
 double Qki = QC*FQki          ; // kidney 
 double Qh  = QC*FQh           ; // hepatic (venous side)
-double Qha = Qh - Qgu - Qsp 	; // hepatic artery 
-double Qlu = QC*FQlu		      ; // lung 
+double Qha = Qh - Qgu - Qsp   ; // hepatic artery 
+double Qlu = QC*FQlu          ; // lung 
 double Qmu = QC*FQmu          ; // muscle 
 double Qsk = QC*FQsk          ; // skin 
 double Qsp = QC*FQsp          ; // spleen 
 double Qte = QC*FQte          ; // testes 
-double Qre = QC*FQre		      ; // rest of body
+double Qre = QC*FQre          ; // rest of body
 
 
 [ ODE ]
@@ -154,13 +154,13 @@ double Cbrain    = Abr/Vbr		; // brain
 double Cgut      = Agu/Vgu		; // gut
 double Cheart    = Ahe/Vhe		; // heart 
 double Ckidney   = Aki/Vki		; // kidney 
-double Cliver    = Ali/Vli  	; // liver 
+double Cliver    = Ali/Vli    ; // liver 
 double Clung     = Alu/Vlu		; // lung 
 double Cmuscle   = Amu/Vmu		; // muscle
 double Cskin     = Ask/Vsk		; // skin 
 double Cspleen   = Asp/Vsp		; // spleen 
 double Ctestes   = Ate/Vte		; // testes 
-double Cvenous   = Ave/Vve	  ; // venous blood
+double Cvenous   = Ave/Vve    ; // venous blood
 double Carterial = Aar/Var		; // arterial blood
 double Crest     = Are/Vre 		; // rest of body 
 
