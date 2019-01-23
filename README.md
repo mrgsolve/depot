@@ -24,13 +24,13 @@ mod <- depot("gcsf")
 Please see the vignettes for the models listed below. More models to
 come.
 
-# INSTALLATION
+# Installation
 
 ``` r
 remotes::install_github("mrgsolve/depot", subdir = "pkg")
 ```
 
-## MODELS
+## Models
 
 ## azithro
 
