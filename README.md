@@ -1,5 +1,5 @@
 
-# mrgsolve Model Depot <img src = "vignette/img/mrgsolve_hex.png" align="right" width="120px"></img>
+# model depot <img src = "vignette/img/mrgsolve_hex.png" align="right" width="120px"></img>
 
 # INSTALLATION
 
