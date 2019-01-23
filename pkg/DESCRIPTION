@@ -7,4 +7,5 @@ Depends: mrgsolve
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
+Extended: This is an extended description of what the Package can do.
 RoxygenNote: 6.1.1

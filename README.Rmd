@@ -4,6 +4,28 @@ output: github_document
 ---
 # model depot <img src = "vignette/img/mrgsolve_hex.png" align="right" width="120px"></img>
 
+mrgsolve has a function called `modlib()` that returns path 
+to a library of precoded models that can be accessed like this
+
+```{r, eval=FALSE}
+mod <- mread("pk1", modlib())
+```
+
+or more concisely
+
+```{r, eval=FALSE}
+mod <- modlib("pk1")
+```
+
+__depot__ works just like `modlib()`, but the models come in a 
+separate package housed here. For example
+
+```{r, eval = FALSE}
+mod <- depot("gcsf")
+```
+
+Please see the vignettes for the models listed below.  More models to come. 
+
 # INSTALLATION
 ```{r, eval=FALSE}
 remotes::install_github("mrgsolve/depot", subdir = "pkg")

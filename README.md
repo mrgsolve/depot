@@ -1,6 +1,29 @@
 
 # model depot <img src = "vignette/img/mrgsolve_hex.png" align="right" width="120px"></img>
 
+mrgsolve has a function called `modlib()` that returns path to a library
+of precoded models that can be accessed like this
+
+``` r
+mod <- mread("pk1", modlib())
+```
+
+or more concisely
+
+``` r
+mod <- modlib("pk1")
+```
+
+**depot** works just like `modlib()`, but the models come in a separate
+package housed here. For example
+
+``` r
+mod <- depot("gcsf")
+```
+
+Please see the vignettes for the models listed below. More models to
+come.
+
 # INSTALLATION
 
 ``` r
