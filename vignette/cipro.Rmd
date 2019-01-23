@@ -1,0 +1,61 @@
+---
+title: "Model: cipro"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Sadiq MW, Nielsen EI, Khachman D, Conil JM, Georges B, Houin G, Laffont CM,
+Karlsson MO, Friberg LE. A whole-body physiologically based pharmacokinetic
+(WB-PBPK) model of ciprofloxacin: a step towards predicting bacterial killing at 
+sites of infection. J Pharmacokinet Pharmacodyn. 2017 Apr;44(2):69-79. doi:
+10.1007/s10928-016-9486-9. Epub 2016 Aug 30. PubMed PMID: 27578330; PubMed
+Central PMCID: PMC5376394.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("cipro", end = 72, delta = 0.25)
+```
+
+
+
+# Example
+
+
+- 400 mg IV daily
+
+```{r}
+e <- ev_rx("400 mg q 12 x4")
+
+e
+```
+
+- Plot the concentration in the lung and kidney
+
+```{r}
+mod %>% 
+  mrgsim_e(e) %>% 
+  plot(Clung + Ckid ~time, scales = "same")
+```
+
+
+# Code
+
+```{c, eval=FALSE, code = mod@code}
+
+```

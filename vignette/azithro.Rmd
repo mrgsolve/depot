@@ -20,7 +20,7 @@ combination tablets. Malar J. 2014 Jan 29;13:36. doi: 10.1186/1475-2875-13-36.
 PubMed PMID: 24472224; PubMed Central PMCID: PMC3909452.
 ```
 
-# Code
+# Example
 
 ```{r}
 library(depot)
@@ -30,13 +30,6 @@ library(dplyr)
 ```{r}
 mod <- depot("azithro", end = 168, delta = 0.1)
 ```
-
-```{c, eval=FALSE, code = mod@code}
-
-```
-
-
-# Example
 
 
 - 500 mg x1; then 250 mg QD x 4
@@ -53,4 +46,7 @@ mod %>%
   plot(CP + PER2 ~time, logy=TRUE)
 ```
 
+# Code
+```{c, eval=FALSE, code = mod@code}
 
+```

@@ -9,7 +9,7 @@ Model: azithro
     combination tablets. Malar J. 2014 Jan 29;13:36. doi: 10.1186/1475-2875-13-36.
     PubMed PMID: 24472224; PubMed Central PMCID: PMC3909452.
 
-# Code
+# Example
 
 ``` r
 library(depot)
@@ -19,6 +19,31 @@ library(dplyr)
 ``` r
 mod <- depot("azithro", end = 168, delta = 0.1)
 ```
+
+  - 500 mg x1; then 250 mg QD x 4
+
+<!-- end list -->
+
+``` r
+e <- ev_rx("500 then 250 q24 x 4 after 24")
+
+e
+```
+
+    . Events:
+    .   time cmt amt evid ii addl
+    . 1    0   1 500    1  0    0
+    . 2   24   1 250    1 24    3
+
+``` r
+mod %>% 
+  mrgsim_e(e, add = 0.05) %>% 
+  plot(CP + PER2 ~time, logy=TRUE)
+```
+
+![](azithro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+# Code
 
 ``` c
 [PROB]
@@ -71,28 +96,3 @@ dxdt_PER3 =  Q3*(CENT/V1 - PER3/V3);
 [TABLE]
 capture CP = CENT/(V1/1000.0)*exp(RUV);
 ```
-
-# Example
-
-  - 500 mg x1; then 250 mg QD x 4
-
-<!-- end list -->
-
-``` r
-e <- ev_rx("500 then 250 q24 x 4 after 24")
-
-e
-```
-
-    . Events:
-    .   time cmt amt evid ii addl
-    . 1    0   1 500    1  0    0
-    . 2   24   1 250    1 24    3
-
-``` r
-mod %>% 
-  mrgsim_e(e, add = 0.05) %>% 
-  plot(CP + PER2 ~time, logy=TRUE)
-```
-
-![](azithro_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
