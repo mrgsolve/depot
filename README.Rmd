@@ -7,7 +7,7 @@ output: github_document
 ## azithro 
 
 - Type: Population PK
-- Links: [model](inst/models/azithro.cpp) [vignette](vignette/azithro.md)
+- Links: [model](pkg/inst/models/azithro.cpp) [vignette](vignette/azithro.md)
 
 __Reference__
 Zhao Q, Tensfeldt TG, Chandra R, Mould DR. _Population 
@@ -20,7 +20,7 @@ PMCID: PMC3909452.
 
 ## cipro 
 - Type: PBPK
-- Links: [model](inst/models/cipro.cpp) [vignette](vignette/cipro.md)
+- Links: [model](pkg/inst/models/cipro.cpp) [vignette](vignette/cipro.md)
 
 __Reference__
 Sadiq MW, Nielsen EI, Khachman D, Conil JM, Georges B, Houin G, Laffont CM,
@@ -33,7 +33,7 @@ Central PMCID: PMC5376394.
 ## gcsf
 
 - Type: TMDD
-- Links: [model](inst/models/gcsf.cpp) [vignette](vignette/gcsf.md)
+- Links: [model](pkg/inst/models/gcsf.cpp) [vignette](vignette/gcsf.md)
 
 __Reference__
 Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M, Berghout A, Balser S.
@@ -45,7 +45,7 @@ PubMed PMID: 20881223.
 ## sunit
 
 - Type: Population PK
-- Links:[model](inst/models/sunit.cpp) [vignette](vignette/sunit.md)
+- Links:[model](pkg/inst/models/sunit.cpp) [vignette](vignette/sunit.md)
 
 __Reference__
 Houk BE, Bello CL, Kang D, Amantea M. A population pharmacokinetic

@@ -4,7 +4,7 @@
 ## azithro
 
   - Type: Population PK
-  - Links: [model](inst/models/azithro.cpp)
+  - Links: [model](pkg/inst/models/azithro.cpp)
     [vignette](vignette/azithro.md)
 
 **Reference** Zhao Q, Tensfeldt TG, Chandra R, Mould DR. *Population
@@ -17,7 +17,8 @@ Central PMCID: PMC3909452.
 ## cipro
 
   - Type: PBPK
-  - Links: [model](inst/models/cipro.cpp) [vignette](vignette/cipro.md)
+  - Links: [model](pkg/inst/models/cipro.cpp)
+    [vignette](vignette/cipro.md)
 
 **Reference** Sadiq MW, Nielsen EI, Khachman D, Conil JM, Georges B,
 Houin G, Laffont CM, Karlsson MO, Friberg LE. A whole-body
@@ -30,7 +31,8 @@ PubMed Central PMCID: PMC5376394.
 ## gcsf
 
   - Type: TMDD
-  - Links: [model](inst/models/gcsf.cpp) [vignette](vignette/gcsf.md)
+  - Links: [model](pkg/inst/models/gcsf.cpp)
+    [vignette](vignette/gcsf.md)
 
 **Reference** Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M,
 Berghout A, Balser S. Population modeling of filgrastim PK-PD in healthy
@@ -41,7 +43,8 @@ Pharmacol. 2010 Sep;50(9 Suppl):101S-112S. doi:
 ## sunit
 
   - Type: Population PK
-  - Links:[model](inst/models/sunit.cpp) [vignette](vignette/sunit.md)
+  - Links:[model](pkg/inst/models/sunit.cpp)
+    [vignette](vignette/sunit.md)
 
 **Reference** Houk BE, Bello CL, Kang D, Amantea M. A population
 pharmacokinetic meta-analysis of sunitinib malate (SU11248) and its
