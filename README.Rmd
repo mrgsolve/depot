@@ -70,3 +70,15 @@ FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
   
 https://www.accessdata.fda.gov/drugsatfda_docs/nda/2015/125504Orig1s000ClinPharmR.pdf
 
+## rifampicin
+
+- Type: PBPK
+- Links: [model](pkg/inst/models/rifampicin.cpp) [vignette](vignette/rifampicin.md)
+
+__Reference__
+Asaumi R, Toshimoto K, Tobe Y, Hashizume K, Nunoya KI, Imawaka H, Lee W,
+Sugiyama Y. Comprehensive PBPK Model of Rifampicin for Quantitative Prediction of
+Complex Drug-Drug Interactions: CYP3A/2C9 Induction and OATP Inhibition Effects. 
+CPT Pharmacometrics Syst Pharmacol. 2018 Mar;7(3):186-196. doi:
+10.1002/psp4.12275. Epub 2018 Feb 5. PubMed PMID: 29368402; PubMed Central PMCID:
+PMC5869557.

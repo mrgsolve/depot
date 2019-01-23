@@ -1,0 +1,53 @@
+---
+title: "Model: rifampicin"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Asaumi R, Toshimoto K, Tobe Y, Hashizume K, Nunoya KI, Imawaka H, Lee W,
+Sugiyama Y. Comprehensive PBPK Model of Rifampicin for Quantitative Prediction of
+Complex Drug-Drug Interactions: CYP3A/2C9 Induction and OATP Inhibition Effects. 
+CPT Pharmacometrics Syst Pharmacol. 2018 Mar;7(3):186-196. doi:
+10.1002/psp4.12275. Epub 2018 Feb 5. PubMed PMID: 29368402; PubMed Central PMCID:
+PMC5869557.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("rifampicin", end = 200, delta = 0.1)
+```
+
+
+- 600 mg daily for 7 days
+
+```{r}
+e <- ev(amt = 600, ii = 24, total = 7)
+
+e
+```
+
+```{r}
+out <- mod %>% mrgsim_e(e, add = 0.05)
+
+plot(out, Ccentral ~ time)
+```
+
+# Code
+```{c, eval=FALSE, code = mod@code}
+
+```

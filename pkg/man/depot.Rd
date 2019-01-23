@@ -4,7 +4,7 @@
 \alias{depot}
 \title{Model depot location}
 \usage{
-depot()
+depot(x = NULL, ...)
 }
 \description{
 Model depot location

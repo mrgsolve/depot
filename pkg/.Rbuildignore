@@ -1,3 +1,4 @@
 ^depot\.Rproj$
 ^\.Rproj\.user$
 vignette/*\.html$
+pkg/inst/script/
