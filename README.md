@@ -1,6 +1,14 @@
 
 # depot <img src = "vignette/img/mrgsolve_hex.png" align="right" width="120px"></img>
 
+# INSTALLATION
+
+``` r
+remotes::install_github("mrgsolve/depot", subdir = "pkg")
+```
+
+## MODELS
+
 ## azithro
 
   - Type: Population PK
