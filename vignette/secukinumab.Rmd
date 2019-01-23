@@ -1,0 +1,52 @@
+---
+title: "Model: secukinumab"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
+Clinical Pharmacology Reviewer: Jie Wang, Ph.D.
+Pharmcometrics Reviewer: Jee Eun Lee, Ph.D.
+Pharmacometrics Team Leader: Jeffry Florian, Ph.D.
+Clinical Pharmacology Team Leader: Yow-Ming Wang, Ph.D.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("secukinumab") %>% zero_re()
+```
+
+
+- 150 mg SC at weeks 0, 1, 2, 3, 4 and 8
+
+```{r}
+e <- ev(amt = 150, time = c(0,1,2,3,4,8)*7)
+
+e
+```
+
+```{r}
+mod %>% 
+  mrgsim_e(e, add = 0.05, Req = "CP = IPRED, PASI") %>% 
+  plot(CP + PASI~time)
+```
+
+# Code
+```{c, eval=FALSE, code = mod@code}
+
+```

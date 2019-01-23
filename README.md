@@ -51,3 +51,21 @@ pharmacokinetic meta-analysis of sunitinib malate (SU11248) and its
 primary metabolite (SU12662) in healthy volunteers and oncology
 patients. Clin Cancer Res. 2009 Apr 1;15(7):2497-506. doi:
 10.1158/1078-0432.CCR-08-1893. Epub 2009 Mar 3. PubMed PMID: 19258444.
+
+## secukinumab
+
+  - Type: PK/PD
+  - Links: [model](pkg/inst/models/secukinumab.cpp)
+    [vignette](vignette/secukinumab.md)
+
+**Reference**
+
+FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
+
+  - Clinical Pharmacology Reviewer: Jie Wang, Ph.D.
+  - Pharmcometrics Reviewer: Jee Eun Lee, Ph.D.
+  - Pharmacometrics Team Leader: Jeffry Florian, Ph.D.
+  - Clinical Pharmacology Team Leader: Yow-Ming Wang,
+Ph.D.
+
+<https://www.accessdata.fda.gov/drugsatfda_docs/nda/2015/125504Orig1s000ClinPharmR.pdf>
