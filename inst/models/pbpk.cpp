@@ -72,35 +72,35 @@ FQre = 0.103855  //; rest of body
 
 // {Tissue to plasma partition coefficients}
 
-Kpad = 1  //; adipose
-Kpbo = 1  //; bone
-Kpbr = 1  //; brain 
-Kpgu = 1  //; gut
-Kphe = 1  //; heart
-Kpki = 1  //; kidney
-Kpli = 1  //; liver
-Kplu = 1  //; lung
-Kpmu = 1  //; muscle
-Kpsk = 1  //; skin
-Kpsp = 1  //; spleen
-Kpte = 1  //; testes
-Kpre = 1  //; rest of body
+Kpad = 0.191  //; adipose
+Kpbo = 0.374  //; bone
+Kpbr = 0.606  //; brain 
+Kpgu = 0.578  //; gut
+Kphe = 0.583  //; heart
+Kpki = 0.597  //; kidney
+Kpli = 0.570  //; liver
+Kplu = 0.620  //; lung
+Kpmu = 0.622  //; muscle
+Kpsk = 0.600  //; skin
+Kpsp = 0.591  //; spleen
+Kpte = 0.600  //; testes
+Kpre = 0.600  //; rest of body
 
 // {In vitro binding data}
 
-fup   = 1  //; fraction unbound in plasma
-BP    = 1  //; blood to plasma ratio
+fup   = 0.681  //; fraction unbound in plasma
+BP    = 0.98  //; blood to plasma ratio
 fumic = 1  //; fraction unbound in microsomes
 
 // {Clearances}
 
-HLM_CLint = 10   //; HLM CLint apparent (ul/min/mg) 
+HLM_CLint =  8   //; HLM CLint apparent (ul/min/mg) 
 CLrenal   =  0   //; CLint renal (L/hr)
 
 // {Absorption}
 
-Ka = 1        //; Ka (hr-1)
-F  = 1        //; fraction absorbed
+Ka = 2.18     //; Ka (hr-1)
+F  = 1.00     //; fraction absorbed
 CO = 108.33   //; cardiac output (ml/s)
 
 [ MAIN  ]

@@ -1,2 +1,3 @@
 ^depot\.Rproj$
 ^\.Rproj\.user$
+vignette/*\.html$
