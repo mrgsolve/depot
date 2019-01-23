@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 vignette/*\.html$
 pkg/inst/script/
+README.Rmd

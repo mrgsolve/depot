@@ -15,3 +15,7 @@ release:
 	make all
 	cp ${TARBALL} src/contrib
 	Rscript -e 'tools::write_PACKAGES("src/contrib/")'
+
+readme:
+	Rscript -e 'rmarkdown::render("README.Rmd")'
+
