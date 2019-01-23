@@ -3,9 +3,8 @@ Title: mrgsolve model depot
 Version: 0.0.0.9000
 Authors@R: person("Kyle", "Baron", email = "kyleb@metrumrg.com", role = c("aut", "cre"))
 Description: Creates compiled binary of mrgsolve models for use in R.
-Depends: R (>= 3.5.2)
+Depends: mrgsolve
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
-Depends: mrgsolve
 RoxygenNote: 6.1.1
