@@ -37,3 +37,14 @@ Berghout A, Balser S. Population modeling of filgrastim PK-PD in healthy
 adults following intravenous and subcutaneous administrations. J Clin
 Pharmacol. 2010 Sep;50(9 Suppl):101S-112S. doi:
 10.1177/0091270010376966. PubMed PMID: 20881223.
+
+## sunit
+
+  - Type: Population PK
+  - Links:[model](inst/models/sunit.cpp) [vignette](vignette/sunit.md)
+
+**Reference** Houk BE, Bello CL, Kang D, Amantea M. A population
+pharmacokinetic meta-analysis of sunitinib malate (SU11248) and its
+primary metabolite (SU12662) in healthy volunteers and oncology
+patients. Clin Cancer Res. 2009 Apr 1;15(7):2497-506. doi:
+10.1158/1078-0432.CCR-08-1893. Epub 2009 Mar 3. PubMed PMID: 19258444.

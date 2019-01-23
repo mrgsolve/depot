@@ -1,0 +1,58 @@
+---
+title: "Model: sunit"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Houk BE, Bello CL, Kang D, Amantea M. A population pharmacokinetic
+meta-analysis of sunitinib malate (SU11248) and its primary metabolite
+(SU12662) in healthy volunteers and oncology patients. Clin Cancer Res. 
+2009 Apr 1;15(7):2497-506. doi: 10.1158/1078-0432.CCR-08-1893. Epub 2009 
+Mar 3. PubMed PMID: 19258444.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("sunit", end = 300, delta = 0.25)
+```
+
+
+
+# Example
+
+
+- 50 mg po qd x 7
+
+```{r}
+e <- ev(amt = 50, ii = 24, addl = 6)
+
+e
+```
+
+- Plot the concentration in the lung and kidney
+
+```{r}
+mod %>% mrgsim_e(e) %>% plot(CP ~ time)
+```
+
+
+# Code
+
+```{c, eval=FALSE, code = mod@code}
+
+```
