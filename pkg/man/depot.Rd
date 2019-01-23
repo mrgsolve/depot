@@ -2,10 +2,26 @@
 % Please edit documentation in R/depot.R
 \name{depot}
 \alias{depot}
-\title{Model depot location}
+\title{Access the model repo}
 \usage{
 depot(x = NULL, ...)
 }
+\arguments{
+\item{x}{character name of a model in the depot}
+
+\item{...}{passed to \link[mrgsolve:mread]{mrgsolve::mread}}
+}
 \description{
-Model depot location
+Pass in the name of a model to load the model; or call with
+no arguments to get the path to those models (like \link[mrgsolve:modlib]{mrgsolve::modlib}).
+}
+\examples{
+
+\dontrun{
+
+mod <- depot("gcsf")
+
+mod <- mread("moxi", depot())
+}
+
 }
