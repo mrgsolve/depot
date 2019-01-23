@@ -29,3 +29,16 @@ Karlsson MO, Friberg LE. A whole-body physiologically based pharmacokinetic
 sites of infection. J Pharmacokinet Pharmacodyn. 2017 Apr;44(2):69-79. doi:
 10.1007/s10928-016-9486-9. Epub 2016 Aug 30. PubMed PMID: 27578330; PubMed
 Central PMCID: PMC5376394.
+
+## gcsf
+
+- Type: TMDD
+- Links: [model](inst/models/gcsf.cpp) [vignette](vignette/gcsf.md)
+
+__Reference__
+Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M, Berghout A, Balser S.
+Population modeling of filgrastim PK-PD in healthy adults following intravenous
+and subcutaneous administrations. J Clin Pharmacol. 
+2010 Sep;50(9 Suppl):101S-112S. doi: 10.1177/0091270010376966. 
+PubMed PMID: 20881223.
+

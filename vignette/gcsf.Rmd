@@ -1,0 +1,50 @@
+---
+title: "Model: gcsf"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M, Berghout A, Balser S.
+Population modeling of filgrastim PK-PD in healthy adults following intravenous
+and subcutaneous administrations. J Clin Pharmacol. 
+2010 Sep;50(9 Suppl):101S-112S. doi: 10.1177/0091270010376966. 
+PubMed PMID: 20881223.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("gcsf", end = 240, delta = 0.1) %>% zero_re()
+```
+
+
+- 5 mcg / kg daily for 7 days
+
+```{r}
+e <- ev(amt = 75*5, ii = 24, addl = 6)
+
+e
+```
+
+```{r}
+mod %>% mrgsim_e(e, Req = "ANC = RESP") %>% plot(ANC ~time)
+```
+
+# Code
+```{c, eval=FALSE, code = mod@code}
+
+```
