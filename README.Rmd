@@ -82,3 +82,16 @@ Complex Drug-Drug Interactions: CYP3A/2C9 Induction and OATP Inhibition Effects.
 CPT Pharmacometrics Syst Pharmacol. 2018 Mar;7(3):186-196. doi:
 10.1002/psp4.12275. Epub 2018 Feb 5. PubMed PMID: 29368402; PubMed Central PMCID:
 PMC5869557.
+
+## moxi
+
+- Type: Population PK
+- Links: [model](pkg/inst/models/moxi.cpp) [vignette](vignette/moxi.md)
+
+
+__Reference__
+Wicha SG, Haak T, Zink K, Kees F, Kloft C, Kees MG. Population
+pharmacokinetics and target attainment analysis of moxifloxacin in patients with 
+diabetic foot infections. J Clin Pharmacol. 2015 Jun;55(6):639-46.
+doi:10.1002/jcph.464. Epub 2015 Feb 13. PubMed PMID: 25600294.
+

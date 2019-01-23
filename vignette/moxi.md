@@ -1,3 +1,49 @@
+Model: moxi
+================
+
+# Reference
+
+    Wicha SG, Haak T, Zink K, Kees F, Kloft C, Kees MG. Population
+    pharmacokinetics and target attainment analysis of moxifloxacin in patients with 
+    diabetic foot infections. J Clin Pharmacol. 2015 Jun;55(6):639-46.
+    doi:10.1002/jcph.464. Epub 2015 Feb 13. PubMed PMID: 25600294.
+
+# Example
+
+``` r
+library(depot)
+library(dplyr)
+```
+
+``` r
+mod <- depot("moxi", end = 96, delta = 0.1) %>% zero_re()
+```
+
+  - 400 mg IV over 1 hour daily for 3 days
+
+<!-- end list -->
+
+``` r
+e <- ev_rx("400 over 1 q 24 x 3")
+
+e
+```
+
+    . Events:
+    .   time cmt amt evid ii addl rate
+    . 1    0   1 400    1 24    2  400
+
+``` r
+out <- mod %>% mrgsim_e(e)
+
+plot(out, fDV ~ time)
+```
+
+![](moxi_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+# Code
+
+``` c
 [ PROB ]
 1: Wicha SG, Haak T, Zink K, Kees F, Kloft C, Kees MG. Population
 pharmacokinetics and target attainment analysis of moxifloxacin in patients with 
@@ -49,3 +95,4 @@ ETA_V1 : 7.25E-02 : ETA on V1
 4.65E-03
 
 [ SET ] delta=1, end=24*3
+```
