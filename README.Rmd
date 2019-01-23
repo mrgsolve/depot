@@ -95,3 +95,16 @@ pharmacokinetics and target attainment analysis of moxifloxacin in patients with
 diabetic foot infections. J Clin Pharmacol. 2015 Jun;55(6):639-46.
 doi:10.1002/jcph.464. Epub 2015 Feb 13. PubMed PMID: 25600294.
 
+
+## opg
+
+- Type: PK/PD
+- Links: [model](pkg/inst/models/opg.cpp) [vignette](vignette/opg.md)
+
+__Reference__
+
+Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ, Holloway D, Leese
+PT, Peterson MC. Population PK-PD model for Fc-osteoprotegerin in healthy
+postmenopausal women. J Pharmacokinet Pharmacodyn. 2008 Aug;35(4):379-99. 
+doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17. PubMed PMID: 18633695.
+

@@ -1,0 +1,53 @@
+---
+title: "Model: opg"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ, Holloway D, Leese
+PT, Peterson MC. Population PK-PD model for Fc-osteoprotegerin in healthy
+postmenopausal women. J Pharmacokinet Pharmacodyn. 2008 Aug;35(4):379-99. 
+doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17. PubMed PMID: 18633695.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("opg", end = 14*24, delta = 0.5) %>% zero_re()
+```
+
+
+- 3 mg/kg SC x 1
+
+```{r}
+e <- ev(amt = 3*70)
+
+e
+```
+
+- Plot of OPG concentration and `NTX` versus time 
+
+```{r}
+out <- mod %>% mrgsim_e(e) %>% mutate_sims(DAY = time/24)
+
+plot(out, PKDV+NTX ~ DAY)
+```
+
+# Code
+```{c, eval=FALSE, code = mod@code}
+
+```
