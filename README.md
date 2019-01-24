@@ -89,9 +89,7 @@ patients. Clin Cancer Res. 2009 Apr 1;15(7):2497-506. doi:
   - Links: [model](pkg/inst/models/secukinumab.cpp)
     [vignette](vignette/secukinumab.md)
 
-**Reference**
-
-FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
+**Reference** FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
 
   - Clinical Pharmacology Reviewer: Jie Wang, Ph.D.
   - Pharmcometrics Reviewer: Jee Eun Lee, Ph.D.
@@ -131,13 +129,11 @@ Pharmacol. 2015 Jun;55(6):639-46. <doi:10.1002/jcph.464>. Epub 2015 Feb
   - Type: PK/PD
   - Links: [model](pkg/inst/models/opg.cpp) [vignette](vignette/opg.md)
 
-**Reference**
-
-Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ, Holloway D,
-Leese PT, Peterson MC. Population PK-PD model for Fc-osteoprotegerin in
-healthy postmenopausal women. J Pharmacokinet Pharmacodyn. 2008
-Aug;35(4):379-99. doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17.
-PubMed PMID: 18633695.
+**Reference** Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ,
+Holloway D, Leese PT, Peterson MC. Population PK-PD model for
+Fc-osteoprotegerin in healthy postmenopausal women. J Pharmacokinet
+Pharmacodyn. 2008 Aug;35(4):379-99. doi: 10.1007/s10928-008-9093-5. Epub
+2008 Jul 17. PubMed PMID: 18633695.
 
 ## epo
 
@@ -160,7 +156,8 @@ PubMed Central PMCID: PMC3483448.
 **Note**: this is the general PBPK model coded in the Supplementary
 Data.
 
-    Jones H, Rowland-Yeo K. Basic concepts in physiologically based
-    pharmacokinetic modeling in drug discovery and development. CPT Pharmacometrics
-    Syst Pharmacol. 2013 Aug 14;2:e63. doi: 10.1038/psp.2013.41. PubMed PMID:
-    23945604; PubMed Central PMCID: PMC3828005.
+**Reference** Jones H, Rowland-Yeo K. Basic concepts in physiologically
+based pharmacokinetic modeling in drug discovery and development. CPT
+Pharmacometrics Syst Pharmacol. 2013 Aug 14;2:e63. doi:
+10.1038/psp.2013.41. PubMed PMID: 23945604; PubMed Central PMCID:
+PMC3828005.
