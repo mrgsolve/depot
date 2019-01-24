@@ -41,7 +41,7 @@ out <- mod %>% mrgsim_e(e, add = 0.05)
 plot(out, Ccentral ~ time)
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/rifampicin_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](rifampicin_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

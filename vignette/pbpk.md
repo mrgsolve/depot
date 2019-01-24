@@ -22,8 +22,7 @@ library(dplyr)
 mod <- depot("pbpk", end = 120, delta = 0.1) 
 ```
 
-  - 150 mg
-daily
+  - 150 mg daily
 
 <!-- end list -->
 
@@ -35,7 +34,7 @@ e <- ev(amt = 150, ii = 24, addl = 3)
 mod %>% mrgsim_e(e) %>% plot(Cp ~time)
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/pbpk_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](pbpk_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

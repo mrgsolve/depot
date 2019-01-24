@@ -45,7 +45,7 @@ mod %>%
   plot(Clung + Ckid ~time, scales = "same")
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/cipro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](cipro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

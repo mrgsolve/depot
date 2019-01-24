@@ -38,7 +38,7 @@ e
 mod %>% mrgsim_e(e) %>% plot(CP ~ time)
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/sunit_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](sunit_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

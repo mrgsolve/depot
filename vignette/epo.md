@@ -36,7 +36,7 @@ data <- as_data_set(tiw,qw)
 mod %>% mrgsim_d(data) %>% plot(HGBi ~time, scales = "same")
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/epo_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](epo_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

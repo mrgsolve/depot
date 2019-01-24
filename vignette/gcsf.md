@@ -38,7 +38,7 @@ e
 mod %>% mrgsim_e(e, Req = "ANC = RESP") %>% plot(ANC ~time)
 ```
 
-![](/Users/kyleb/git/mrgsolve/depot/vignette/gcsf_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](gcsf_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 
