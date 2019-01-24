@@ -1,0 +1,60 @@
+---
+title: "Model: epo"
+output: 
+  github_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = '.')
+```
+
+
+# Reference
+
+```{}
+Yan X, Lowe PJ, Fink M, Berghout A, Balser S, Krzyzanski W. Population
+pharmacokinetic and pharmacodynamic model-based comparability assessment of a
+recombinant human Epoetin Alfa and the Biosimilar HX575. J Clin Pharmacol. 2012
+Nov;52(11):1624-44. doi: 10.1177/0091270011421911. Epub 2011 Dec 12. 
+PubMed PMID: 22162538; PubMed Central PMCID: PMC3483448.
+```
+
+# Example
+
+```{r}
+library(depot)
+library(dplyr)
+```
+
+```{r}
+mod <- depot("epo", end = 700, delta = 0.5) %>% zero_re()
+```
+
+
+
+# Example
+
+
+- Comnpare 100 IU/kg TIW SC and 40,000 QW SC
+
+```{r}
+tiw <- ev_days(ev(amt = 100*70), days = "m,w,f", addl = 3)
+
+qw <- ev(amt = 40E3, ii = 168, addl = 3)
+
+data <- as_data_set(tiw,qw)
+```
+
+- Plot the concentration in the lung and kidney
+
+```{r}
+mod %>% mrgsim_d(data) %>% plot(HGBi ~time, scales = "same")
+```
+
+
+# Code
+
+```{c, eval=FALSE, code = mod@code}
+
+```

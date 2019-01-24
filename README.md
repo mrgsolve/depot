@@ -138,3 +138,15 @@ Leese PT, Peterson MC. Population PK-PD model for Fc-osteoprotegerin in
 healthy postmenopausal women. J Pharmacokinet Pharmacodyn. 2008
 Aug;35(4):379-99. doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17.
 PubMed PMID: 18633695.
+
+## epo
+
+  - Type: PK/PD
+  - Links: [model](pkg/inst/models/epo.cpp) [vignette](vignette/epo.md)
+
+**Reference** Yan X, Lowe PJ, Fink M, Berghout A, Balser S, Krzyzanski
+W. Population pharmacokinetic and pharmacodynamic model-based
+comparability assessment of a recombinant human Epoetin Alfa and the
+Biosimilar HX575. J Clin Pharmacol. 2012 Nov;52(11):1624-44. doi:
+10.1177/0091270011421911. Epub 2011 Dec 12. PubMed PMID: 22162538;
+PubMed Central PMCID: PMC3483448.
