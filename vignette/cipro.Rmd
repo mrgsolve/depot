@@ -34,9 +34,6 @@ mod <- depot("cipro", end = 72, delta = 0.25)
 
 
 
-# Example
-
-
 - 400 mg IV daily
 
 ```{r}

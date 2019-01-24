@@ -43,7 +43,7 @@ out <- mod %>% mrgsim_e(e) %>% mutate_sims(DAY = time/24)
 plot(out, PKDV+NTX ~ DAY)
 ```
 
-![](opg_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/opg_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

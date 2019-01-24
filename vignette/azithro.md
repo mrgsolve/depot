@@ -41,7 +41,7 @@ mod %>%
   plot(CP + PER2 ~time, logy=TRUE)
 ```
 
-![](azithro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/azithro_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
 
 # Code
 

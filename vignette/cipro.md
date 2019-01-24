@@ -21,8 +21,6 @@ library(dplyr)
 mod <- depot("cipro", end = 72, delta = 0.25)
 ```
 
-# Example
-
   - 400 mg IV daily
 
 <!-- end list -->
@@ -47,7 +45,7 @@ mod %>%
   plot(Clung + Ckid ~time, scales = "same")
 ```
 
-![](cipro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/cipro_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

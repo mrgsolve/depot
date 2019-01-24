@@ -20,8 +20,6 @@ library(dplyr)
 mod <- depot("epo", end = 700, delta = 0.5) %>% zero_re()
 ```
 
-# Example
-
   - Comnpare 100 IU/kg TIW SC and 40,000 QW SC
 
 <!-- end list -->
@@ -38,7 +36,7 @@ data <- as_data_set(tiw,qw)
 mod %>% mrgsim_d(data) %>% plot(HGBi ~time, scales = "same")
 ```
 
-![](epo_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/epo_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

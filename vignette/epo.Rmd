@@ -32,10 +32,6 @@ mod <- depot("epo", end = 700, delta = 0.5) %>% zero_re()
 ```
 
 
-
-# Example
-
-
 - Comnpare 100 IU/kg TIW SC and 40,000 QW SC
 
 ```{r}

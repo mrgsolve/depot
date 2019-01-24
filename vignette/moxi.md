@@ -39,7 +39,7 @@ out <- mod %>% mrgsim_e(e)
 plot(out, fDV ~ time)
 ```
 
-![](moxi_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/moxi_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

@@ -45,7 +45,7 @@ mod %>%
   plot(CP + PASI~time)
 ```
 
-![](secukinumab_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/secukinumab_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 

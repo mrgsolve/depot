@@ -31,11 +31,6 @@ library(dplyr)
 mod <- depot("sunit", end = 300, delta = 0.25)
 ```
 
-
-
-# Example
-
-
 - 50 mg po qd x 7
 
 ```{r}

@@ -20,8 +20,6 @@ library(dplyr)
 mod <- depot("sunit", end = 300, delta = 0.25)
 ```
 
-# Example
-
   - 50 mg po qd x 7
 
 <!-- end list -->
@@ -40,7 +38,7 @@ e
 mod %>% mrgsim_e(e) %>% plot(CP ~ time)
 ```
 
-![](sunit_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](/Users/kyleb/git/mrgsolve/depot/vignette/sunit_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 # Code
 
