@@ -44,7 +44,6 @@ e <- ev(amt = 50, ii = 24, addl = 6)
 e
 ```
 
-- Plot the concentration in the lung and kidney
 
 ```{r}
 mod %>% mrgsim_e(e) %>% plot(CP ~ time)

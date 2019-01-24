@@ -34,10 +34,6 @@ qw <- ev(amt = 40E3, ii = 168, addl = 3)
 data <- as_data_set(tiw,qw)
 ```
 
-  - Plot the concentration in the lung and kidney
-
-<!-- end list -->
-
 ``` r
 mod %>% mrgsim_d(data) %>% plot(HGBi ~time, scales = "same")
 ```

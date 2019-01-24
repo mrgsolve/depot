@@ -36,10 +36,6 @@ e
     .   time cmt amt evid ii addl
     . 1    0   1  50    1 24    6
 
-  - Plot the concentration in the lung and kidney
-
-<!-- end list -->
-
 ``` r
 mod %>% mrgsim_e(e) %>% plot(CP ~ time)
 ```

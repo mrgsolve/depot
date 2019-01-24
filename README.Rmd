@@ -150,3 +150,18 @@ pharmacokinetic and pharmacodynamic model-based comparability assessment of a
 recombinant human Epoetin Alfa and the Biosimilar HX575. J Clin Pharmacol. 2012
 Nov;52(11):1624-44. doi: 10.1177/0091270011421911. Epub 2011 Dec 12. 
 PubMed PMID: 22162538; PubMed Central PMCID: PMC3483448.
+
+
+## pbpk
+
+- Type: PBPK
+- Links: [model](pkg/inst/models/pbpk.cpp) [vignette](vignette/pbpk.md)
+
+__Note__: this is the general PBPK model coded in the Supplementary Data.
+
+```{}
+Jones H, Rowland-Yeo K. Basic concepts in physiologically based
+pharmacokinetic modeling in drug discovery and development. CPT Pharmacometrics
+Syst Pharmacol. 2013 Aug 14;2:e63. doi: 10.1038/psp.2013.41. PubMed PMID:
+23945604; PubMed Central PMCID: PMC3828005.
+```
