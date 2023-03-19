@@ -131,7 +131,7 @@ doi: 10.1007/s10928-008-9093-5. Epub 2008 Jul 17. PubMed PMID: 18633695.
 
 ## epo
 
-- Type: PK/PD
+- Type: TMDD
 - Links: [model](pkg/inst/models/epo.cpp) [vignette](vignette/epo.md)
 
 __Reference__ Yan X, Lowe PJ, Fink M, Berghout A, Balser S, Krzyzanski W. Population
@@ -153,4 +153,16 @@ __Reference__ Jones H, Rowland-Yeo K. Basic concepts in physiologically based
 pharmacokinetic modeling in drug discovery and development. CPT Pharmacometrics
 Syst Pharmacol. 2013 Aug 14;2:e63. doi: 10.1038/psp.2013.41. PubMed PMID:
 23945604; PubMed Central PMCID: PMC3828005.
+
+
+## TMDD
+
+- Type: PK
+- Links: [model](pkg/inst/models/tmdd.cpp) [vignette](vignette/tmdd.md)
+
+__Reference__ Peletier LA, Gabrielsson J. Dynamics of target-mediated drug
+disposition: characteristic profiles and parameter identification. 
+J Pharmacokinet Pharmacodyn. 2012 Oct;39(5):429-51. 
+doi: 10.1007/s10928-012-9260-6. Epub 2012 Aug 1. PMID: 22851162; 
+PMCID: PMC3446204.
 

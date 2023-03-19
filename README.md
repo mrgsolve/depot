@@ -34,9 +34,9 @@ remotes::install_github("mrgsolve/depot", subdir = "pkg")
 
 ## azithro
 
-  - Type: Population PK
-  - Links: [model](pkg/inst/models/azithro.cpp)
-    [vignette](vignette/azithro.md)
+- Type: Population PK
+- Links: [model](pkg/inst/models/azithro.cpp)
+  [vignette](vignette/azithro.md)
 
 **Reference** Zhao Q, Tensfeldt TG, Chandra R, Mould DR. *Population
 pharmacokinetics of azithromycin and chloroquine in healthy adults and
@@ -47,9 +47,9 @@ Central PMCID: PMC3909452.
 
 ## cipro
 
-  - Type: PBPK
-  - Links: [model](pkg/inst/models/cipro.cpp)
-    [vignette](vignette/cipro.md)
+- Type: PBPK
+- Links: [model](pkg/inst/models/cipro.cpp)
+  [vignette](vignette/cipro.md)
 
 **Reference** Sadiq MW, Nielsen EI, Khachman D, Conil JM, Georges B,
 Houin G, Laffont CM, Karlsson MO, Friberg LE. A whole-body
@@ -61,9 +61,8 @@ PubMed Central PMCID: PMC5376394.
 
 ## gcsf
 
-  - Type: TMDD
-  - Links: [model](pkg/inst/models/gcsf.cpp)
-    [vignette](vignette/gcsf.md)
+- Type: TMDD
+- Links: [model](pkg/inst/models/gcsf.cpp) [vignette](vignette/gcsf.md)
 
 **Reference** Krzyzanski W, Wiczling P, Lowe P, Pigeolet E, Fink M,
 Berghout A, Balser S. Population modeling of filgrastim PK-PD in healthy
@@ -73,9 +72,8 @@ Pharmacol. 2010 Sep;50(9 Suppl):101S-112S. doi:
 
 ## sunit
 
-  - Type: Population PK
-  - Links:[model](pkg/inst/models/sunit.cpp)
-    [vignette](vignette/sunit.md)
+- Type: Population PK
+- Links:[model](pkg/inst/models/sunit.cpp) [vignette](vignette/sunit.md)
 
 **Reference** Houk BE, Bello CL, Kang D, Amantea M. A population
 pharmacokinetic meta-analysis of sunitinib malate (SU11248) and its
@@ -85,25 +83,24 @@ patients. Clin Cancer Res. 2009 Apr 1;15(7):2497-506. doi:
 
 ## secukinumab
 
-  - Type: PK/PD
-  - Links: [model](pkg/inst/models/secukinumab.cpp)
-    [vignette](vignette/secukinumab.md)
+- Type: PK/PD
+- Links: [model](pkg/inst/models/secukinumab.cpp)
+  [vignette](vignette/secukinumab.md)
 
 **Reference** FDA Clin Pharm Review 125504Orig1s000ClinPharmR.pdf
 
-  - Clinical Pharmacology Reviewer: Jie Wang, Ph.D.
-  - Pharmcometrics Reviewer: Jee Eun Lee, Ph.D.
-  - Pharmacometrics Team Leader: Jeffry Florian, Ph.D.
-  - Clinical Pharmacology Team Leader: Yow-Ming Wang,
-Ph.D.
+- Clinical Pharmacology Reviewer: Jie Wang, Ph.D.
+- Pharmcometrics Reviewer: Jee Eun Lee, Ph.D.
+- Pharmacometrics Team Leader: Jeffry Florian, Ph.D.
+- Clinical Pharmacology Team Leader: Yow-Ming Wang, Ph.D.
 
 <https://www.accessdata.fda.gov/drugsatfda_docs/nda/2015/125504Orig1s000ClinPharmR.pdf>
 
 ## rifampicin
 
-  - Type: PBPK
-  - Links: [model](pkg/inst/models/rifampicin.cpp)
-    [vignette](vignette/rifampicin.md)
+- Type: PBPK
+- Links: [model](pkg/inst/models/rifampicin.cpp)
+  [vignette](vignette/rifampicin.md)
 
 **Reference** Asaumi R, Toshimoto K, Tobe Y, Hashizume K, Nunoya KI,
 Imawaka H, Lee W, Sugiyama Y. Comprehensive PBPK Model of Rifampicin for
@@ -114,9 +111,8 @@ Pharmacol. 2018 Mar;7(3):186-196. doi: 10.1002/psp4.12275. Epub 2018 Feb
 
 ## moxi
 
-  - Type: Population PK
-  - Links: [model](pkg/inst/models/moxi.cpp)
-    [vignette](vignette/moxi.md)
+- Type: Population PK
+- Links: [model](pkg/inst/models/moxi.cpp) [vignette](vignette/moxi.md)
 
 **Reference** Wicha SG, Haak T, Zink K, Kees F, Kloft C, Kees MG.
 Population pharmacokinetics and target attainment analysis of
@@ -126,8 +122,8 @@ Pharmacol. 2015 Jun;55(6):639-46. <doi:10.1002/jcph.464>. Epub 2015 Feb
 
 ## opg
 
-  - Type: PK/PD
-  - Links: [model](pkg/inst/models/opg.cpp) [vignette](vignette/opg.md)
+- Type: PK/PD
+- Links: [model](pkg/inst/models/opg.cpp) [vignette](vignette/opg.md)
 
 **Reference** Zierhut ML, Gastonguay MR, Martin SW, Vicini P, Bekker PJ,
 Holloway D, Leese PT, Peterson MC. Population PK-PD model for
@@ -137,8 +133,8 @@ Pharmacodyn. 2008 Aug;35(4):379-99. doi: 10.1007/s10928-008-9093-5. Epub
 
 ## epo
 
-  - Type: PK/PD
-  - Links: [model](pkg/inst/models/epo.cpp) [vignette](vignette/epo.md)
+- Type: TMDD
+- Links: [model](pkg/inst/models/epo.cpp) [vignette](vignette/epo.md)
 
 **Reference** Yan X, Lowe PJ, Fink M, Berghout A, Balser S, Krzyzanski
 W. Population pharmacokinetic and pharmacodynamic model-based
@@ -149,9 +145,8 @@ PubMed Central PMCID: PMC3483448.
 
 ## pbpk
 
-  - Type: PBPK
-  - Links: [model](pkg/inst/models/pbpk.cpp)
-    [vignette](vignette/pbpk.md)
+- Type: PBPK
+- Links: [model](pkg/inst/models/pbpk.cpp) [vignette](vignette/pbpk.md)
 
 **Note**: this is the general PBPK model coded in the Supplementary
 Data.
@@ -161,3 +156,14 @@ based pharmacokinetic modeling in drug discovery and development. CPT
 Pharmacometrics Syst Pharmacol. 2013 Aug 14;2:e63. doi:
 10.1038/psp.2013.41. PubMed PMID: 23945604; PubMed Central PMCID:
 PMC3828005.
+
+## TMDD
+
+- Type: PK
+- Links: [model](pkg/inst/models/tmdd.cpp) [vignette](vignette/tmdd.md)
+
+**Reference** Peletier LA, Gabrielsson J. Dynamics of target-mediated
+drug disposition: characteristic profiles and parameter identification.
+J Pharmacokinet Pharmacodyn. 2012 Oct;39(5):429-51. doi:
+10.1007/s10928-012-9260-6. Epub 2012 Aug 1. PMID: 22851162; PMCID:
+PMC3446204.
