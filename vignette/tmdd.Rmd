@@ -86,7 +86,7 @@ sens_plot(
 
 Check the actual values
 
-```{r}
+```{r, echo = FALSE}
 out %>% 
   filter(time==0) %>% 
   group_by(p_name) %>% 

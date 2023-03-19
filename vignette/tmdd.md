@@ -79,17 +79,6 @@ sens_plot(
 
 Check the actual values
 
-``` r
-out %>% 
-  filter(time==0) %>% 
-  group_by(p_name) %>% 
-  summarise(
-    lo = min(p_value), 
-    mid = median(p_value), 
-    hi = max(p_value)
-  ) %>% knitr::kable()
-```
-
 | p_name |        lo |   mid |        hi |
 |:-------|----------:|------:|----------:|
 | CL     | 0.0001353 | 0.001 | 0.0073891 |
