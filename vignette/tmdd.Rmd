@@ -71,7 +71,7 @@ out <- mod %>%
 ```
 
 
-```{r}
+```{r, fig.width = 12}
 #| fig.width: 8
 sens_plot(
   out, 
