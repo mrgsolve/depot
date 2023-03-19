@@ -30,6 +30,7 @@ This simulation replicates Figure 3 in the paper.
 ```{r}
 library(depot)
 library(dplyr)
+library(mrgsim.sa)
 ```
 
 ```{r}
@@ -53,6 +54,47 @@ Note that these are mg/kg doses. Model parameters are also weight-normalized.
 
 ```{r}
 mod %>% mrgsim_e(e) %>% plot(CP ~time, logy = TRUE)
+```
+
+# Sensitivity analysis
+
+- Run on just the 5 mg/kg dose
+- each parameter is varied between $\pm 2\sigma$ of log-normal
+distribution with 100% coefficient of variation
+
+```{r}
+out <- mod %>%  
+  parseq_cv(keRL, koff, kon, kout, kin, CL,   .cv = 100) %>%
+  ev(amt = 5) %>% 
+  update(outvars = "L") %>%
+  sens_each(recsort = 3) 
+```
+
+
+```{r}
+#| fig.width: 8
+sens_plot(
+  out, 
+  "L", 
+  logy = TRUE, 
+  plot_ref = FALSE,
+  xlab = "Time (h)", 
+  ylab = "Concentration (mg/L)"
+) 
+
+```
+
+Check the actual values
+
+```{r}
+out %>% 
+  filter(time==0) %>% 
+  group_by(p_name) %>% 
+  summarise(
+    lo = min(p_value), 
+    mid = median(p_value), 
+    hi = max(p_value)
+  ) %>% knitr::kable()
 ```
 
 
