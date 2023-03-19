@@ -59,7 +59,7 @@ mod %>% mrgsim_e(e) %>% plot(L ~time, logy = TRUE)
 # Sensitivity analysis
 
 - Run on just the 5 mg/kg dose
-- each parameter is varied between $\pm 2\sigma$ of log-normal
+- Each parameter is varied between $\pm 2\sigma$ of log-normal
 distribution with 100% coefficient of variation
 
 ```{r}
