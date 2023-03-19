@@ -31,4 +31,4 @@ dxdt_RL = kon * L * R - (koff + keRL) * RL;
 
 dxdt_T = (CLd/Vc) * L - (CLd/Vt) * T;
 
-$CAPTURE CP = L
+[ capture ] CP = L
