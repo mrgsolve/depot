@@ -58,7 +58,7 @@ mod %>% mrgsim_e(e) %>% plot(L ~time, logy = TRUE)
 
 ``` r
 out <- mod %>%  
-  parseq_cv(keRL, koff, kon, kout, kin, CL,   .cv = 100) %>%
+  parseq_cv(keRL, koff, kon, kout, kin, CL, .cv = 100) %>%
   ev(amt = 5) %>% 
   update(outvars = "L") %>%
   sens_each(recsort = 3) 
