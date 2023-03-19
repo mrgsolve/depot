@@ -45,7 +45,7 @@ Note that these are mg/kg doses. Model parameters are also
 weight-normalized.
 
 ``` r
-mod %>% mrgsim_e(e) %>% plot(CP ~time, logy = TRUE)
+mod %>% mrgsim_e(e) %>% plot(L ~time, logy = TRUE)
 ```
 
 ![](tmdd_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
